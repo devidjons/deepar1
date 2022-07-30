@@ -8,5 +8,5 @@ def gausian_prob(input, target):
 	
 	mu = input[0]
 	sigma = input[1]
-	# return mean(log(sigma) + (1.0/2.0*(target[skip:] - mu)**2)/sigma)
-	return mean((target - mu) ** 2 + 0 * sigma)
+	return mean(log(sigma) + (1.0/2.0*(target - mu)**2)/sigma)
+	# return mean((target - mu) ** 2 + 0 * sigma)

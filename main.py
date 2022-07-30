@@ -37,7 +37,7 @@ trainer = pl.Trainer(gradient_clip_val = 0.0,
                      )
 
 
-trainer.tune(model)
+# trainer.tune(model)
 print(model.lr)
 trainer.fit(model, val_dataloaders=model.train_dataloader())
 
